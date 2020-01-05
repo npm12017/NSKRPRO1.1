@@ -718,7 +718,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40.18, 40.31, 227, 415 } //{ 643, 645, 3632, 830 } 27/12/2019 z steps
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 39.4, 39.4, 211.1, 205.4 } //05/01/2020 { 643, 645, 3632, 830 } 27/12/2019 z steps
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1021,7 +1021,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_Y_DIR false 
 #define INVERT_Z_DIR true
 
 // @section extruder
