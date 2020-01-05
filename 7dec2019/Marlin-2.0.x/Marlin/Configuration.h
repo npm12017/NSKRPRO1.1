@@ -921,7 +921,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -32, -5, -1.75 } //27/12/2019 offset(bltouch)
+#define NOZZLE_TO_PROBE_OFFSET { -32, -5, -3.40 } //05/01/2020 27/12/2019 offset(bltouch)
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
