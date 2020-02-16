@@ -921,10 +921,10 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -32, -5, -3.40 } //05/01/2020 27/12/2019 offset(bltouch)
+#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -3.40 } //05/01/2020 27/12/2019 offset(bltouch)
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 0
+#define MIN_PROBE_EDGE 20
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 12000 //8000 27/12/2019 
