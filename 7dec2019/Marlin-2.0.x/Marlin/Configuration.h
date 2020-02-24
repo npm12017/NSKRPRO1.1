@@ -718,7 +718,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40.1, 41.6, 202.6, 205.4 } //05/01/2020 { 643, 645, 3632, 830 } 27/12/2019 z steps
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40.1, 39.5, 190.5, 205.4 } //05/01/2020 { 643, 645, 3632, 830 } 27/12/2019 z steps
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -921,7 +921,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -2.10 } //05/01/2020 27/12/2019 offset(bltouch)
+#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -3.70 } //05/01/2020 27/12/2019 offset(bltouch)
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 20
