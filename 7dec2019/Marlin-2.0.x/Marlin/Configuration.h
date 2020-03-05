@@ -718,14 +718,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40.1, 39.8, 200, 205.4 } //05/01/2020 { 643, 645, 3632, 830 } 27/12/2019 z steps
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40.1, 39.8, 200, 410.8 } //05/01/2020 { 643, 645, 3632, 830 } 27/12/2019 z steps
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 180, 180, 5, 20  }
+#define DEFAULT_MAX_FEEDRATE          { 180, 180, 5, 30  }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -755,7 +755,7 @@
  */
 #define DEFAULT_ACCELERATION          400   // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   50    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   1000   // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)
@@ -921,13 +921,13 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -0.3 } //05/01/2020 27/12/2019 offset(bltouch)
+#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -3.3 } //05/01/2020 27/12/2019 offset(bltouch)
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 20
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 12000 //8000 27/12/2019 
+#define XY_PROBE_SPEED 15000 //8000 27/12/2019 
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
